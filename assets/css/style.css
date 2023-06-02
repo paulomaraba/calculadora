@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    font-size: 62,5%;
+
+    --color-white: #fff;
+    --color-dark-300: #151a20;
+    --color-dark-600: #2f3035;
+    --color-dark-900: #5c6063;
+    --color-blue-600: #2493f2;
+    --color-blue-200: #26d1fc;
+    --color-orange: #f5b11a;
+    --color-bg-transparent: rgba(0, 0, 0, .8);
+    --color-button-orange: #f5b01ae2;
+    --color-button-blue: #2492f26c;
+    --color-button-dark-600: #2f30355d;
+    --color-button-dark-900: #5c60636b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.calc-area {
+    position: absolute;
+    background: var(--color-bg-transparent);
+    color: var(--color-white);
+    border-radius: .4rem;
+    box-shadow: .5rem .5rem .9rem var(--color-dark-900);
+    padding: .2rem .8rem;
+}
+.calc-tela {
+    position: relative;
+    margin-top: 1.5rem;
+    height: 6.5rem;
+    text-align: end;
+    font-size: 1rem;
+    border-bottom: .1rem solid var(--color-dark-900);
+}
+div.calc-result {
+    font-size: 3.5rem;
+}
+.fa-delete-left {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: .2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+button {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: .1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: .1rem solid var(--color-dark-900);
+    box-shadow: .1rem .1rem .3rem var(--color-dark-900);
+}
+.button-reset, .button-parentheses {
+    color: var(--color-white);
+    background-color: var(--color-dark-900);
+}
+.button-reset:hover, .button-parentheses:hover {
+    background-color: var(--color-button-dark-900);
+}
+.button-symbol {
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+}
+.button-symbol:hover {
+    background-color: var(--color-button-blue);
+}
+.button-equals {
+    height: 9.1rem;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+.button-equals:hover {
+    background-color: var(--color-button-orange);
+}
+.button-number {
+    color: var(--color-white);
+    background-color: var(--color-dark-600);
+}
+.button-number:hover {
+    background-color: var(--color-button-dark-600);
+}
+.zero {
+    width: 9.1rem;
+}
+.copy {
+    gap: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-top: 1.8rem;
+}
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

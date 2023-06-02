@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <img class="wave" src="assets/img/bg.svg">
+
+    <div class="container">    
+        <div class="calc-area">
+            
+            <div class="calc-tela">
+                <div class="calc-number"><span></span></div>
+                <div class="calc-result"><span class="result"></span></div>
+            </div>
+
+            <div class="painel">
+                <div class="button-clear">
+                    <i class="fa-solid fa-delete-left" onclick="back()"></i>
+                </div>
+                <table>
+                    <tr>
+                        <td><button class="button-reset" onclick="clean('AC')">AC</button></td>
+                        <td><button class="button-parentheses" onclick="inserir('%')/100">%</button></td>
+                        <td><button class="button-symbol" onclick="inserir('/')">
+                            <i class="fa-solid fa-divide"></i>
+                        </button></td>
+                        <td><button class="button-symbol" onclick="inserir('*')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" onclick="inserir('7')">7</button></td>
+                        <td><button class="button-number" onclick="inserir('8')">8</button></td>
+                        <td><button class="button-number" onclick="inserir('9')">9</button></td>
+                        <td><button class="button-symbol" onclick="inserir('-')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" onclick="inserir('4')">4</button></td>
+                        <td><button class="button-number" onclick="inserir('5')">5</button></td>
+                        <td><button class="button-number" onclick="inserir('6')">6</button></td>
+                        <td><button class="button-symbol" onclick="inserir('+')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" onclick="inserir('1')">1</button></td>
+                        <td><button class="button-number" onclick="inserir('2')">2</button></td>
+                        <td><button class="button-number" onclick="inserir('3')">3</button></td>
+                        <td rowspan="2"><button class="button-equals" onclick="equals()">
+                            <i class="fa-solid fa-equals"></i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="button-number zero" onclick="inserir('0')">0</button></td>
+                        <td><button class="button-number" onclick="inserir('.')">.</button></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="copy">
+                &copy; <a href="mailton:paulomaraba@gmail.com" target="_blank">paulomaraba</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

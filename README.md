@@ -1,7 +1,14 @@
 # :date: Calculadora
-<div style="margin-bottom: 35px" align="center">
-Tecnologias | Projeto | Observações| Imagens | Licença
+<div align="center">
+    Tecnologias | Projeto | Observações| Imagens | Licença
 </div>
+<br/>
+<div align="center">
+  <img src="https://img.shields.io/github/languages/count/paulomaraba/calculadora">
+  <img src="https://img.shields.io/github/repo-size/paulomaraba/calculadora">
+  <img src="https://img.shields.io/github/last-commit/paulomaraba/calculadora">
+  <img src="https://img.shields.io/github/issues/paulomaraba/calculadora">
+</div>        
 
 ### :hammer_and_wrench: Técnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
